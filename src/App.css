@@ -1,0 +1,366 @@
+.col {
+  background-color: aliceblue;
+  /* border: 1px solid black; */
+  height: calc((100vh / 15));
+  max-height: calc((100vh / 15));
+  width: calc((100vh / 15));
+  max-width: calc((100vh / 15));
+  padding: 0px;
+  text-align: center;
+  overflow: visible;
+  vertical-align: middle;
+}
+/* .row {
+  padding-right: calc((100vw - 100vh)/2);
+  padding-left: calc((100vw - 100vh)/2);
+} */
+
+.caracter {
+  -moz-box-shadow: 0px 1px 1px rgb(168, 168, 168);
+  -webkit-box-shadow: 0px 1px 1px rgb(168, 168, 168);
+  box-shadow: 0px 1px 1px rgb(168, 168, 168);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  height : auto;
+  z-index: 2000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  position: relative;
+}
+
+#pos-blue-1, #pos-blue-2, #pos-blue-3, #pos-blue-4, #pos-red-1, #pos-red-2, #pos-red-3, #pos-red-4, #pos-green-1, #pos-green-2, #pos-green-3, #pos-green-4, #pos-yellow-1, #pos-yellow-2, #pos-yellow-3, #pos-yellow-4 {
+  overflow: visible;
+}
+
+#pos-blue-1 > img, #pos-blue-2 > img, #pos-blue-3 > img, #pos-blue-4 > img, #pos-red-1 > img, #pos-red-2 > img, #pos-red-3 > img, #pos-red-4 > img, #pos-green-1 > img, #pos-green-2 > img, #pos-green-3 > img, #pos-green-4 > img, #pos-yellow-1 > img, #pos-yellow-2 > img, #pos-yellow-3 > img, #pos-yellow-4 > img {
+  left: 50%;
+  bottom: -50%;
+  right: auto;
+  position: relative;
+}
+
+
+.abletomove {
+  animation: jump 1s infinite linear;
+}
+
+@keyframes jump{
+  0%{bottom: 1px;}
+  37%{bottom: 4px;}
+  50%{bottom: 6px;}
+  70%{bottom: 4px;}
+  100%{bottom: 1px;}
+}
+
+.container_game {
+  display: flex;
+  flex-direction: row;
+}
+
+.control-2 {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.control-1 {
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.control-3 {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.control-player {
+  height: 50vh;
+  width: calc((100vw - 130vh)/2);
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 10vh;
+}
+
+.profile {
+  width: calc((100vw - 100vh)/4);
+  text-align: center;
+  color: azure;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.de {
+  width: calc((100vw - 130vh)/4);
+  text-align: center;
+  padding-top: 6px;
+}
+
+.dashboard {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background: linear-gradient(90deg, rgba(130, 55, 187, 0.31416316526610644) 0%, rgba(84, 30, 184, 1) 0%, rgba(84, 30, 184, 1) 0%, rgba(38, 126, 126, 1) 100%);
+  border-radius: 10px;
+}
+
+.nard {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: calc((100vw - 152vh)/4);
+  height: calc((100vw - 152vh)/4);
+}
+
+.point_container::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+
+}
+
+.one_point {
+  border-radius: 50%;
+  background-color: black;
+  width: 14px;
+  height: 14px;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+
+}
+
+.point {
+  border-radius: 50%;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 4px;
+
+}
+
+#parent_div {
+  background-image: url("./img/background3.png");
+  background-size: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-color: #e8b36d;
+}
+
+.imgSetting {
+  width: 14vh;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+}
+
+.rowName {
+  margin-top: 5px;
+}
+
+.setting {
+  color: azure;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100vh;
+  padding: 5px;
+  background-color: rgba(2, 18, 48, 0.664);
+}
+
+.startGame {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: auto;
+  color: aliceblue;
+  background-color: rgba(11, 23, 61, 0.966);
+  font-size: 26px;
+  border: none;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.playerName {
+  border: none;
+  border-radius: 6px;
+  margin-left: 13px;
+  width: calc((100vw / 2) - (26px + 15vh));
+}
+
+.nbPlayers {
+  width: 20px;
+  height: 20px;
+}
+
+.labelNbPlayers {
+  font-size: 28px;
+}
+
+.red {
+  background-color: rgb(192, 0, 0);
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: rgb(38, 113, 252);
+}
+
+.yellow {
+  background-color: rgb(216, 216, 0);
+}
+
+#center {
+  background: linear-gradient(45deg, rgb(38, 113, 252) 50%, rgb(192, 0, 0) 50%), linear-gradient(135deg, rgb(38, 113, 252) 50%, rgb(216, 216, 0) 50%), linear-gradient(135deg, rgb(192, 0, 0) 50%, green 50%), linear-gradient(225deg, green 50%, rgb(216, 216, 0) 50%);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.left_top {
+  border-left: 1px solid rgb(109, 109, 109);
+  border-top: 1px solid rgb(109, 109, 109);
+}
+
+.right_bottom {
+  border-right: 1px solid rgb(109, 109, 109);
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.right {
+  border-right: 1px solid rgb(109, 109, 109);
+}
+
+.bottom {
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.bottom_right_green {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, green 50%, green 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_left_green {
+  background: linear-gradient(90deg, green 50%, green 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_left_green {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, green 50%, green 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_right_green {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, green 50%, green 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_right_red {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, rgb(192, 0, 0) 50%, rgb(192, 0, 0) 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_left_red {
+  background: linear-gradient(90deg, rgb(192, 0, 0) 50%, rgb(192, 0, 0) 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_left_red {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, rgb(192, 0, 0) 50%, rgb(192, 0, 0) 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_right_red {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, rgb(192, 0, 0) 50%, rgb(192, 0, 0) 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_right_blue {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, white 50%, white 50%), linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, rgb(38, 113, 252) 50%, rgb(38, 113, 252) 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_left_blue {
+  background: linear-gradient(90deg, rgb(38, 113, 252) 50%, rgb(38, 113, 252) 50%), linear-gradient(0deg, white 50%, white 50%), linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_left_blue {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, rgb(38, 113, 252) 50%, rgb(38, 113, 252) 50%), linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_right_blue {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(0deg, white 50%, white 50%), linear-gradient(90deg, rgb(38, 113, 252) 50%, rgb(38, 113, 252) 50%), linear-gradient(0deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_right_yellow {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, rgb(216, 216, 0) 50%, rgb(216, 216, 0) 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_left_yellow {
+  background: linear-gradient(90deg, rgb(216, 216, 0) 50%, rgb(216, 216, 0) 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom_left_yellow {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, rgb(216, 216, 0) 50%, rgb(216, 216, 0) 50%), linear-gradient(270deg, white 50%, white 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.top_right_yellow {
+  background: linear-gradient(90deg, white 50%, white 50%), linear-gradient(180deg, white 50%, white 50%), linear-gradient(270deg, rgb(216, 216, 0) 50%, rgb(216, 216, 0) 50%), linear-gradient(360deg, white 50%, white 50%);
+  background-size: 51% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
